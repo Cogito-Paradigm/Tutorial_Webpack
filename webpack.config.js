@@ -6,8 +6,26 @@ module.exports = {
 	// entry: './src/index.js',
 	entry: {
 		index: './src/index.js',
-		print: './src/print.js',
 	},
+	// entry: {
+	// 	index: './src/index.js',
+	// 	print: './src/print.js',
+	// },
+	// entry: {
+	// 	index: './src/index.js',
+	// 	another: './src/another-module.js',
+	// }
+	// entry: {
+	// 	index: {
+	// 		import: './src/index.js',
+	// 		dependOn: 'shared',
+	// 	},
+	// 	another: {
+	// 		import: './src/another-module.js',
+	// 		dependOn: 'shared',
+	// 	},
+	// 	shared: 'lodash',
+	// },
 	plugins: [
 		new HtmlWebpackPlugin({
 			// title: 'Output Management',
@@ -26,6 +44,12 @@ module.exports = {
 		clean: true,
 		publicPath: '/',
 	},
+	// optimization: {
+	// 	// runtimeChunk: 'single',
+	// 	splitChunks: {
+	// 		chunks: 'all',
+	// 	},
+	// },
 	module: {
 		rules: [
 			{
